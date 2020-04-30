@@ -4,7 +4,7 @@
     <div v-for="pokemon in pokedex" :key="pokemon.name">
       <h2>{{pokemon.name}}</h2>
       <!-- Image of the Pokemon -->
-      <img v-bind:src="imgSrc + pokemon.index + '.png'">
+      <img v-bind:src="imageSrc + pokemon.index + '.png'">
       <h3>National Index {{ pokemon.index }}</h3>
       <p>{{ pokemon.description }}</p>
       <ul class="stats">
